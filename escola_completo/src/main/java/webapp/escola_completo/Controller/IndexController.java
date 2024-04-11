@@ -16,12 +16,14 @@ public class IndexController {
         return mv;
     }
     @GetMapping("")
-    public String acessoHomePage2() {
-        return "index";
+    public ModelAndView acessoHomePage2() {
+        ModelAndView mv = new ModelAndView("index");
+        return mv;
     }
     @GetMapping("/login-adm")
-    public String acessoLoginAdm() {
-        return "login/login-adm";
+    public ModelAndView acessoLoginAdm() {
+        ModelAndView mv = new ModelAndView("login/login-adm");
+        return mv;
     }
     @GetMapping("/cadastro-adm")
     public String acessoCadastroAdm() {
